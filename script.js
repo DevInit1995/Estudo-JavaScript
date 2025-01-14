@@ -1,4 +1,5 @@
 function adicionarTarefa(){
+  debugger;
   //PEGA O ELEMENTO DO CAMPO DE ENTRADA DE TEXTO
   let inputTarefa = document.getElementById("inputTarefa");
 
@@ -36,5 +37,42 @@ function adicionarTarefa(){
 
   //LIMPA O CAMPO APÓS CLICAR NO BOTÃO PARA ADICIONAR TAREFA
   inputTarefa.value = "";
-
 }
+
+//debugger;
+const car = {
+  caracteristicas: {
+    montadora: "volkswagen",
+    modelo: "polo"
+  },
+  ano: 2019,
+  cor: "azul",
+}
+
+for (const key in car) {
+  const value = car[key];
+  if (typeof value === 'object') {
+    // Se for um objeto, itere sobre as suas propriedades
+    for (const veichile in value) {
+      console.log("Veichile - Properties: " + value[veichile]);
+    }
+  } else {
+    console.log("Car - Property: " + value);
+  }
+}
+//undefined
+console.log(Object.values(car).map(value => value.caracteristicas));
+console.log(car.caracteristicas, car.ano, car.cor);
+
+new Date();
+console.log(new Date("2024-06-24"));
+console.log(new Date(2024, 6, 22, 12, 0,1));
+
+//arrow function
+const myFunction = () => "Exemplo da minha função";
+console.log(myFunction());
+
+const myExeFunction = (param) => {
+  return `Exemplo da minha função ${param}`;
+}
+console.log(myExeFunction("Jhon"));
