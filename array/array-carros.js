@@ -1,5 +1,5 @@
 function exibePropriedadeCarros() {
-    debugger;
+    //debugger;
     const carros = [
         {
             marca: "Honda-Civic",
