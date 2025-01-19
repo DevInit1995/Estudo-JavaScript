@@ -1,5 +1,5 @@
 function adicionarTarefa(){
-  debugger;
+  //debugger;
   //PEGA O ELEMENTO DO CAMPO DE ENTRADA DE TEXTO
   let inputTarefa = document.getElementById("inputTarefa");
 
