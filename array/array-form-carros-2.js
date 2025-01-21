@@ -17,7 +17,7 @@ submitBtn.addEventListener("click", () => {
         tipo: form.tipo.value,
         km: parseInt(form.km.value, 10) || 0,
         combustivel: form.combustivel.value,
-        potencia: form.potencia.value,
+        motor: form.motor.value,
         preco: parseFloat(form.preco.value)
     };
 
@@ -36,10 +36,10 @@ function atualizarLista() {
     listaCarros.innerHTML = "";
     carros.forEach((carro) => {
         const li = document.createElement("li");
-        li.textContent = `${carro.marca} - ${carro.placa} - 
-        ${carro.cor} - ${carro.ano} - ${carro.tipo} - 
-        ${carro.km} - ${carro.combustivel} - ${carro.potencia} - 
-        ${carro.potencia} - ${carro.preco}`;
+        li.textContent = `${"Marca: " + carro.marca} - ${"Placa: " + carro.placa} - 
+        ${"Cor: " + carro.cor} - ${"Ano: " + carro.ano} - ${"Tipo: " + carro.tipo} - 
+        ${"KM: " + carro.km} - ${"Combustível: " + carro.combustivel} - 
+        ${"Motor: " + carro.motor} - ${"Preço: " + carro.preco}`;
         listaCarros.appendChild(li);
     });
 }

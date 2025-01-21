@@ -3,44 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/array/array-form-carros-2.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Cadastro de Carros</h1>
-    <form id="carrosForm">
-      <label for="marca">Marca:</label>
-      <input type="text" id="marca" name="marca" />
+    <div class="container">
+      <h1>Cadastro de Carros</h1>
+      <form id="carrosForm">
+        <div class="form-group">
+          <label for="marca">Marca:</label>
+          <input type="text" id="marca" name="marca" />
+        </div>
+        <div class="form-group">
+          <label for="placa">Placa:</label>
+          <input type="text" id="placa" name="placa" />
+        </div>
+        <div class="form-group">
+          <label for="cor">Cor:</label>
+          <input type="text" id="cor" name="cor" />
+        </div>
+        <div class="form-group">
+          <label for="ano">Ano:</label>
+          <input type="number" id="ano" name="ano" />
+        </div>
+        <div class="form-group">
+          <label for="tipo">Tipo:</label>
+          <input type="text" id="tipo" name="tipo" />
+        </div>
 
-      <label for="placa">Placa:</label>
-      <input type="text" id="placa" name="marca" />
+        <div class="form-group">
+          <label for="km">KM:</label>
+          <input type="number" id="km" name="km" />
+        </div>
+        <div class="form-group">
+          <label for="combustivel">Combustível:</label>
+          <input type="text" id="combustivel" name="combustivel" />
+        </div>
+        <div class="form-group">
+          <label for="potencia">Motor:</label>
+          <input type="text" id="motor" name="potencia" />
+        </div>
+        <div class="form-group">
+          <label for="preco">Preço:</label>
+          <input type="number" id="preco" name="preco" step="0.01" />
+        </div>
 
-      <label for="cor">Cor:</label>
-      <input type="text" id="cor" name="cor" />
+        <button type="button" id="submitBtn">Adicionar dados ao Array</button>
+      </form>
 
-      <label for="ano">Ano:</label>
-      <input type="number" id="ano" name="ano" />
+      <h2>Carros cadastrados:</h2>
+      <ul id="listaCarros"></ul>
 
-      <label for="tipo">Tipo:</label>
-      <input type="text" id="tipo" name="tipo" />
-
-      <label for="km">KM:</label>
-      <input type="number" id="km" name="km" />
-
-      <label for="combustivel">Combustível:</label>
-      <input type="text" id="combustivel" name="combustivel" />
-
-      <label for="potencia">Potência:</label>
-      <input type="text" id="potencia" name="potencia" />
-
-      <label for="preco">Preço:</label>
-      <input type="number" id="preco" name="preco" step="0.01" />
-
-      <button type="button" id="submitBtn">Adicionar dados ao Array</button>
-    </form>
-
-    <h2>Carros cadastrados:</h2>
-    <ul id="listaCarros"></ul>
-
-    <script src="array-form-carros-2.js"></script>
+      <script src="array-form-carros-2.js"></script>
+    </div>
   </body>
 </html>
