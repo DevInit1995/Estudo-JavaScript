@@ -5,6 +5,7 @@ const carros = [];
 const form = document.getElementById("carrosForm");
 const submitBtn = document.getElementById("submitBtn");
 const listaCarros = document.getElementById("listaCarros");
+const mensagem = document.getElementById("mensagem");
 
 // Função para adicionar um carros ao array
 submitBtn.addEventListener("click", () => {
@@ -40,6 +41,22 @@ function atualizarLista() {
         ${"Cor: " + carro.cor} - ${"Ano: " + carro.ano} - ${"Tipo: " + carro.tipo} - 
         ${"KM: " + carro.km} - ${"Combustível: " + carro.combustivel} - 
         ${"Motor: " + carro.motor} - ${"Preço: " + carro.preco}`;
-        listaCarros.appendChild(li);
+
+        if(carro.marca == "" || carro.placa == "" ||
+            carro.cor == "" || carro.ano == "" ||
+            carro.tipo == "" || carro.km == "" ||
+            carro.combustivel == "" || carro.motor == "" ||
+            carro.preco == ""){
+                //debugger;
+                mensagem.style.color = "#A34743";
+                let camposVazios = "Preencha todos os campos!";
+                mensagem.textContent = camposVazios;
+            }
+            else{
+                mensagem.style.color = "#28A745";
+                let mensagemSucesso = "Formulário salvo com sucesso";
+                mensagem.textContent = mensagemSucesso;
+                listaCarros.appendChild(li);
+            }
     });
 }
