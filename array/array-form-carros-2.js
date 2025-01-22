@@ -47,7 +47,6 @@ function atualizarLista() {
             carro.tipo == "" || carro.km == "" ||
             carro.combustivel == "" || carro.motor == "" ||
             carro.preco == ""){
-                //debugger;
                 mensagem.style.color = "#A34743";
                 let camposVazios = "Preencha todos os campos!";
                 mensagem.textContent = camposVazios;
