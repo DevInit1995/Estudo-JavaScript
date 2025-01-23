@@ -4,8 +4,8 @@ let btnCalculo = document.getElementById("btnCalculo");
 
 btnCalculo.addEventListener("click", () => {
     let percentual, preco_com_imposto;
-    //debugger;
     let valorPreco = parseFloat(preco.value);
+    
     if(valorPreco == 50){
         percentual = 20;
         var calculo = (valorPreco * percentual) / 100;
