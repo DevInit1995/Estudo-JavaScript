@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dependentes funcionário</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label for="nomeFuncionario">Nome funcionário:</label>
+        <input type="text" id="nomeFuncionario" name="nomeFuncionario" />
+        <br />
+        <label for="salarioFuncionario">Salário funcionário:</label>
+        <input
+          type="number"
+          id="salarioFuncionario"
+          name="salarioFuncionario"
+        />
+        <br />
+        <label for="quantidadeDependentes">Quantidade dependentes:</label>
+        <input
+          type="number"
+          id="quantidadeDependentes"
+          name="quantidadeDependentes"
+        />
+      </form>
+
+      <button type="button" id="btnCalcular">Calcular</button>
+      <br />
+      <label for="resultado">Resultado:</label>
+      <p id="resultado"></p>
+    </div>
+    <script src="program.js"></script>
+  </body>
+</html>
