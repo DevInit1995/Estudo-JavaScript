@@ -9,7 +9,7 @@ btnCalucular.addEventListener("click", () => {
 
     idade = atual - nascimento;
 
-    resultado.innerText = `${"Ano Atual: " + atual} 
-    ${"Ano Nascimento: " + nascimento} 
-    ${"Idade: " + idade}`;
+    resultado.innerText = `"Ano Atual: " ${atual} 
+    "Ano Nascimento: " ${nascimento} 
+    "Idade: " ${idade}`;
 });

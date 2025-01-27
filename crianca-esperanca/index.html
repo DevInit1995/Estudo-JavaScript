@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criança Esperança</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Criança Esperança</h1>
+      <h3>Muito obrigado por ajudar</h3>
+
+      <table>
+        <tr>
+          <th>Para doar R$10</th>
+          <th>Para doar R$25</th>
+          <th>Para doar R$50</th>
+          <th>Para doar outro valor</th>
+          <th>Para cancelar</th>
+        </tr>
+        <tr>
+          <td>Digite [1]</td>
+          <td>Digite [2]</td>
+          <td>Digite [3]</td>
+          <td>Digite [4]</td>
+          <td>Digite [5]</td>
+        </tr>
+      </table>
+
+      <form>
+        <label for="opcaoDoacao">Opção doação:</label>
+        <input type="number" id="opcaoDoacao" name="opcaoDoacao" />
+      </form>
+
+      <button type="button" id="btnRegistrar">Registrar</button>
+      <br />
+      <label for="doacaoFinalizada">Descrição da doação:</label>
+      <p id="doacaoFinalizada"></p>
+    </div>
+    <script src="program.js"></script>
+  </body>
+</html>
